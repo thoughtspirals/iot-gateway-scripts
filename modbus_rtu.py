@@ -6,7 +6,7 @@ import os
 SLAVE_ID = 181
 PORT = 'COM11' if os.name == 'nt' else '/dev/ttyUSB0'
 BAUDRATE = 9600
-PARITY = 'E'
+PARITY = 'N'
 STOPBITS = 1
 BYTESIZE = 8
 TIMEOUT = 2
