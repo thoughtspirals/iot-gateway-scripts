@@ -5,8 +5,12 @@ import time
 SLAVE_ID = 181
 PORT = '/dev/ttyAS1'
 BAUDRATE = 9600
+PARITY = 'N'
+STOPBITS = 1
+BYTESIZE = 8
+TIMEOUT = 2
 MODBUS_OFFSET = 40001
-READ_INTERVAL = 5
+READ_INTERVAL = 5  # seconds between loops
 
 # Configure the instrument
 instrument = minimalmodbus.Instrument(PORT, SLAVE_ID)
